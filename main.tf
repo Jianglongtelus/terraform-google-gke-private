@@ -26,7 +26,7 @@ resource "google_container_cluster" "k8s" {
 
   name           = "${var.name}"
   project        = "${var.project}"
-  depends_on     = ["google_project_service.container"]
+  depends_on     = [google_project_service.container]
   location       = "${var.location}"
   node_locations = "${var.node_locations}"
 

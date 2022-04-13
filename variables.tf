@@ -29,6 +29,7 @@ variable "services_range" {
 }
 
 variable "location" {
+  default = "northamerica-northeast2"
   description = "northamerica-northeast2"
 }
 
@@ -45,6 +46,7 @@ variable master_authorized_networks_config_cidr_blocks {
 
 variable "node_locations" {
   type        = list
+  default = "northamerica-northeast2-a"
   description = "northamerica-northeast2-a"
 }
 
