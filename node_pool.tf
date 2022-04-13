@@ -12,7 +12,7 @@ referencing the container cluster.
 */
 resource "google_container_node_pool" "nodepool1" {
   count    = "${var.deploy_nodepool1 ? 1 : 0}"
-  provider = "google-beta"
+  provider = google-beta
 
   lifecycle {
     // Manually update version during upgrade operations

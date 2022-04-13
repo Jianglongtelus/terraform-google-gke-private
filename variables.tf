@@ -30,7 +30,7 @@ variable "services_range" {
 
 variable "location" {
   default = "northamerica-northeast2"
-  description = "northamerica-northeast2"
+  description = "Master location"
 }
 
 variable master_ipv4_cidr_block {
@@ -46,8 +46,8 @@ variable master_authorized_networks_config_cidr_blocks {
 
 variable "node_locations" {
   type        = list
-  default = "northamerica-northeast2-a"
-  description = "northamerica-northeast2-a"
+  default = "northamerica-northeast2"
+  description = "node location"
 }
 
 variable "name" {
