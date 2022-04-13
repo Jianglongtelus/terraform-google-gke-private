@@ -5,7 +5,7 @@ variable "versions_config" {
 }
 
 variable "project" {
-  description = "Project where the Kubernetes cluster compute resources will be created"
+  description = "ims-kpi-web-portal-lab-7b4f89"
 }
 
 variable "network" {
@@ -39,7 +39,7 @@ variable master_ipv4_cidr_block {
 
 variable master_authorized_networks_config_cidr_blocks {
   description = "List of source addresses to allow remote connection"
-  type        = "list"
+  type        = list
   default     = ["127.0.0.1/32"]
 }
 
