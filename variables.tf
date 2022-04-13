@@ -1,5 +1,5 @@
 variable "versions_config" {
-  type        = "map"
+  type        = map
   description = "Specification of desired versions for Kubernetes components"
   default     = {}
 }
@@ -44,7 +44,7 @@ variable master_authorized_networks_config_cidr_blocks {
 }
 
 variable "node_locations" {
-  type        = "list"
+  type        = list
   description = "Zones that will be added to node pools. For each additional zone an instance will be created. E.g. 1 main zone and 2 additional zones will mean that for node pool size=1 3 nodes will be created"
 }
 
@@ -59,13 +59,13 @@ variable "daily_maintenance_window_start_time" {
 }
 
 variable "labels" {
-  type        = "map"
+  type        = map
   description = "Labels to associate with the resources"
   default     = {}
 }
 
 variable "manc" {
-  type        = "map"
+  type        = map
   description = "Master Authorized Network Config"
   default     = {
     Localhost = "127.0.0.1/32"
@@ -102,7 +102,7 @@ variable deploy_nodepool1 {
 }
 
 variable "nodepool1_labels" {
-  type        = "map"
+  type        = map
   default     = {}
   description = "Kubernetes node labels that will be associated to the nodes in the node pool"
 }
@@ -143,7 +143,7 @@ variable nodepool1_min_cpu_platform {
 }
 
 variable nodepool1_tags {
-  type        = "list"
+  type        = list
   default     = []
   description = "Firewall tags that will be associated to all nodes in the node pool"
 }

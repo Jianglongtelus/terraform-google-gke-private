@@ -13,7 +13,7 @@ data "google_container_engine_versions" "engine_version" {
 }
 
 resource "google_container_cluster" "k8s" {
-  provider = "google-beta"
+  provider = google-beta
   // It is reccomended to ignore node count and versions specifications in the lifecycle
   lifecycle {
     ignore_changes = [
