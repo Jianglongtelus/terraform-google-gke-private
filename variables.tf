@@ -29,7 +29,7 @@ variable "services_range" {
 }
 
 variable "location" {
-  description = "Master location"
+  description = "northamerica-northeast2"
 }
 
 variable master_ipv4_cidr_block {
@@ -45,7 +45,7 @@ variable master_authorized_networks_config_cidr_blocks {
 
 variable "node_locations" {
   type        = list
-  description = "Zones that will be added to node pools. For each additional zone an instance will be created. E.g. 1 main zone and 2 additional zones will mean that for node pool size=1 3 nodes will be created"
+  description = "northamerica-northeast2-a"
 }
 
 variable "name" {

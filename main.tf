@@ -17,10 +17,10 @@ resource "google_container_cluster" "k8s" {
   // It is reccomended to ignore node count and versions specifications in the lifecycle
   lifecycle {
     ignore_changes = [
-      "initial_node_count",
-      "master_version",
-      "min_master_version",
-      "node_version"
+      initial_node_count,
+      master_version,
+      min_master_version,
+      node_version
     ]
   }
 
